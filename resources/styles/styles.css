@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --main-black-color: #1b1f1e;
+  --main-yellow-color: #fff856;
+  --main-white-color: #ffffff;
+  --main-blue-color: #2bdec9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(43, 222, 201, 20%);
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-black-color);
+}
+
+ul,
+h1,
+button,
+.hero-text {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 52px;
+  margin-top: 100px;
+}
+
+a:link,
+a:visited {
+  color: var(--main-black-color);
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1312px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .wrapper {
+  flex-direction: column;
+  gap: 48px;
+}
+
+.big-montserrat {
+  font-size: 32px;
+}
+
+.open-sans-semibold {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.open-sans-regular {
+  font-size: 24px;
+}
+
+.open-sans-small {
+  font-size: 20px;
+}
+
+/* LOGO AND NAVIGATION MENU */
+
+.logo {
+  max-width: 240px;
+  height: auto;
+  margin: 24px 0;
+}
+
+ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background-color: var(--main-blue-color);
+}
+
+.hero .wrapper {
+  gap: 36px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.hero-info h1 {
+  margin-top: 0px;
+}
+
+.hero img {
+  width: 50%;
+  height: auto;
+}
+
+button {
+  padding: 24px 48px;
+  background-color: var(--main-yellow-color);
+  border: 1px solid var(--main-black-color);
+  border-radius: 48px;
+  box-shadow: 8px 8px 0 var(--main-black-color);
+}
+
+/* SECTIONS */
+
+/* INFO */
+
+.cards-container {
+  display: flex;
+  gap: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 304px;
+  max-height: 318px;
+  padding: 20px;
+  background-color: var(--main-white-color);
+  border: 1px solid var(--main-black-color);
+  box-shadow: 8px 8px 0 var(--main-black-color);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.card-img {
+  min-width: 64px;
+  height: auto;
+}
+
+/* REVIEWS */
+
+.reviews-container {
+  display: flex;
+  gap: 32px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 416px;
+  padding: 32px;
+  background-color: var(--main-white-color);
+  border: 1px solid var(--main-black-color);
+  box-shadow: 8px 8px 0 var(--main-black-color);
+  border-radius: 24px;
+}
+
+.review-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.review-person {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* TEAM */
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.team-member img {
+  min-width: 180px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 8px 8px 0 var(--main-black-color);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--main-black-color);
+  color: var(--main-white-color);
+  margin-top: 120px;
+}
+
+.contacts,
+.social-media {
+  margin-top: 40px;
+  margin-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+}
+
+.social-media {
+  align-self: flex-start;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+}
